@@ -1,0 +1,39 @@
+#promotion{
+    background-image: url(../img/bg/promotion-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    background-color: #00000080;
+    background-blend-mode: color;
+    background-attachment: fixed;
+    h1{
+        color: white;
+        font-size: 40px;
+        font-weight: 100;
+    }
+    button{
+        background-color: #f9461d;
+        border:1px solid #f9461d;
+        border-radius: 2px;
+        box-shadow: 0 11px 11px 0 rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+        a{
+            display: block;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            padding: 12px 40px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        &:hover{
+            background-color: white;
+            a{
+                color: #f9461d;
+                text-decoration: none;
+            }
+        }
+    }
+}

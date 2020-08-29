@@ -1,0 +1,21 @@
+#parallax{
+    height: 700px;
+    background-image: url(../img/bg/model-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-attachment: fixed;
+    background-color: #0000006b;
+    background-blend-mode: color;
+    h1,p{
+        color: white;
+    }
+    h1{
+        font-size: 70px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    p{
+        font-size: 24px;
+    }
+}

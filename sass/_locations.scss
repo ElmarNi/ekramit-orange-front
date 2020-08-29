@@ -1,0 +1,75 @@
+#locations{
+    background-image: url(../img/bg/pricing-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    .box{
+        padding: 50px 15px 15px;
+        background: white;
+        transition: all .3s ease;
+        color: #292929;
+        perspective: 500px;
+        margin-bottom: 40px;
+        .icon{
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            top: -35px;
+            left: 50%;
+            z-index: 1;
+            transform: translateX(-50%);
+            i{
+                color: #f9461d;
+                font-size: 25px;
+            }
+        }
+        h3{
+            font-size: 20px;
+            color: #333333;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                border: 1px solid #eee;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+        }
+        ul li p:last-child{
+            margin: 0;
+        }
+        ul, h3{
+            position: relative;
+            z-index: 1;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: #f9461d;
+            transition: all .3s;
+            transform: rotateY(45deg);
+            opacity: 0;
+        }
+        &:hover{
+            &::after{
+                transform: rotateY(0deg);
+                opacity: 1;
+            }
+            h3,p,ul li{
+                color: white;
+            }
+        }
+    }
+}

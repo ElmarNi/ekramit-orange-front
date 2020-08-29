@@ -1,0 +1,54 @@
+#process{
+    .box{
+        position: relative;
+        background: #fafafa;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        transition: all 0.3s ease 0s;
+        padding-top: 0;
+        h3{
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: -20px;
+        }
+        .icon{
+            background-color: #f9461d;
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-40px);
+            i{
+                font-size: 30px;
+                color: #fff;
+                transform: translateY(2px);
+            }
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        p, ul li{
+            font-weight: 100;
+            font-size: 17px;
+        }
+        ul li{
+            display: flex;
+            align-items: center;
+            i{
+                margin-right: 10px;
+                color: #333;
+            }
+        }
+        &:hover{
+            background: #fff none repeat scroll 0 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

@@ -1,0 +1,100 @@
+header#large-screen{
+    padding: 10px 0;
+}
+header.active{
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+    background: #222;
+}
+header{
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all .3s ease;
+    z-index: 999;
+    .logo{
+        img{
+            width: 150px;
+        }
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        align-self: center;
+        a{
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 5px;
+            font-size: 16px;
+            transition: all .3s ease;
+            &:hover{
+                color: #f9461d;
+                text-decoration: none;
+            }
+        }
+    }
+    li.active{
+        a{
+            color: #f9461d;
+        }
+    }
+}
+header#small-screen{
+    height: 47px;
+    .bar{
+        width: 60px;
+        padding: 15px;
+        position: absolute;
+        z-index: 5;
+        transition: all .5s ease;
+        left: 0;
+        cursor: pointer;
+        span{
+            display: block;
+            background-color: white;
+            height: 1px;
+            margin-bottom: 7px;
+            transition: all .5s ease;
+            &:nth-child(1){
+                width: 100%;
+            }
+            &:nth-child(2){
+                width: 75%;
+            }
+            &:nth-child(3){
+                width: 50%;
+            }
+        }
+    }
+    .bar.active{
+        left: 190px;
+        span{
+            width: 100%;
+        }
+    }
+    nav{
+        background-color: #222;
+        position: absolute;
+        left: -190px;
+        transition: all .5s ease;
+        padding: 20px;
+        height: 105vh;
+        top: -5px;
+        padding-top: 0;
+        ul{
+            li{
+                margin-bottom: 10px;
+                a{
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    nav.active{
+        left: 0px;
+    }
+}

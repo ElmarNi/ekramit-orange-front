@@ -1,0 +1,79 @@
+#experts{
+    .box{
+        position: relative;
+        img{
+            transition: all .3s ease;
+        }
+        .plus-icon{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 35px;
+            height: 35px;
+            background: #f9461d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            i{
+                color: white;
+            }
+        }
+        ul.social{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: absolute;
+            transition: all .2s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            left: 0;
+            bottom: -105px;
+            li{
+                width: 35px;
+                height: 35px;
+                background: #f9461d;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    width: 40px;
+                }
+                a{
+                    display: block;
+                    color: white;
+                }
+            }
+        }
+        .content{
+            opacity: 0;
+            position: absolute;
+            bottom: 10px;
+            left: 40px;
+            transition: all .3s ease-in-out;
+            h3{
+                color: #000000a1;
+                font-size: 20px;
+                font-weight: 900;
+                margin: 0 0 7px;
+                text-transform: uppercase;
+            }
+        }
+        &:hover{
+            img{
+                opacity: .3;
+            }
+            ul.social{
+                bottom: 35px;
+                visibility: visible;
+                opacity: 1;
+            }
+            .content{
+                opacity: 1;
+                transform: translate(20px, 0px);
+                transition-delay: 0.2s;
+            }
+        }
+    }
+}

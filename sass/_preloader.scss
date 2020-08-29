@@ -1,0 +1,32 @@
+.preloader{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    .spinner{
+        position: relative;
+        z-index: 5;
+        width: 45px;
+        height: 45px;
+        border-top: 8px solid #f9461d;
+        border-left: 8px solid #f9461d;
+        border-right: 8px solid #f9461d;
+        border-bottom: 8px solid white;
+        border-radius: 100%;
+        animation: spinner .7s infinite linear;
+    }
+}
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

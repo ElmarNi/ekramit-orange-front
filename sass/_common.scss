@@ -1,0 +1,77 @@
+section{
+    padding: 60px 0;
+}
+p{
+    font-size: 17px;
+    font-weight: 100;
+}
+// button for scroll up doc
+#toUp{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background-color: #f9461d;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 50px;
+    border-radius: 100%;
+    transition: all .3s ease;
+    z-index: 99;
+    &:hover{
+        background-color: black;
+    }
+}
+#testimonials, #experts{
+    .owl-carousel{
+        .owl-dot{
+            span{
+                background: #f9461d;
+                opacity: .6;
+                width: 12px;
+                height: 12px;
+                transition: all .3s ease;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            &:focus{
+                outline-color: transparent;
+            }
+        }
+        .owl-dot.active{
+            span{
+                opacity: 1;
+            }
+        }
+    }
+}
+.section-header{
+    text-align: center;
+    margin-bottom: 60px;
+    h1{
+        font-size: 54px;
+        font-weight: 700;
+        position: relative;
+        text-transform: uppercase;
+        &:before{
+            content: '';
+            position: absolute;
+            left: 50%;
+            height: 2px;
+            width: 100px;
+            background: #f9461d;
+            bottom: -15px;
+            transform: translateX(-50%);
+        }
+    }
+    p{
+        font-size: 16px;
+        margin-top: 25px;
+        margin-bottom: 0;
+        font-weight: 100;
+    }
+}

@@ -1,0 +1,43 @@
+#testimonials{
+    
+    .heading{
+        .image{
+            img{
+                width: 90px;
+                height: 90px;
+                border-radius: 100%;
+            }
+        }
+        .name{
+            h3{
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .description{
+        padding: 20px 22px;
+        background: #f9f9f9;
+        margin: 0;
+        position: relative;
+        margin-bottom: 20px;
+        p{
+            margin: 0;
+        }
+        &::after, &::before{
+            content: '';
+            position: absolute;
+            border-color: #f2f2f2 transparent transparent;
+            bottom: -18px;
+            border-width: 18px 0 0 18px;
+            border-style: solid;
+            left: 0;
+        }
+        &::after{
+            border-width: 18px 18px 0 0;
+            left: auto;
+            right: 0;
+        }
+    }
+}

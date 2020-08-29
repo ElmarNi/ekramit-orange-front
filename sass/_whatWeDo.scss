@@ -1,0 +1,62 @@
+#whatWeDo{
+    transition: all .3s ease;
+    .box{
+        position: relative;
+        padding-bottom: 40px;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            background: transparent;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all 0.5s ease 0s;
+        }
+
+        .icon{
+            margin-bottom: 20px;
+            overflow: hidden;
+            i{
+                color: #333;
+                font-size: 50px;
+                transition: all 0.5s ease 0s;
+            }
+        }
+        h2{
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0 0 15px;
+            text-transform: uppercase;
+        }
+        p{
+            margin: 0;
+        }
+        &:hover{
+            &::after{
+                border-color: #f9461d;
+            }
+            .icon{
+                i{
+                    color: #f9461d;
+                    animation: 0.3s runningIcon;
+                }
+            }
+        }
+    }
+    @keyframes runningIcon {
+        49%{
+            transform: translateY(-105%);
+        }
+        50%{
+            opacity: 0;
+            transform: translateY(105%);
+        }
+        51%{
+            opacity: 1;
+        }
+    }
+}
